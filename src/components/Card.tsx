@@ -17,7 +17,6 @@ export const Card = ({id}: Props) => {
         `https://dummyjson.com/products/${id}`
       )
       .then((response: any) => {
-        console.log('response', response?.data)
         if(response.status == 200){
             setData(response?.data);
             setIsLoading(false)

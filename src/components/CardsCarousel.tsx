@@ -63,7 +63,6 @@ function Card({ image }: CardProps) {
 
 export function CardsCarousel({data}: any) {
   const theme = useMantineTheme();
-  console.log('data:', data)
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data?.map((item: any, i: number) => (
     <Carousel.Slide key={i}>

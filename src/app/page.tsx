@@ -16,7 +16,6 @@ function HomePage(){
       'https://dummyjson.com/products'
     )
     .then((response: any) => {
-        console.log('response:', response)
         setData(response?.data?.products);
         setIsLoading(false)
     })
